@@ -12,12 +12,13 @@ export class ListProviderComponent implements OnInit {
   constructor(private providerService :ProviderService, private router : Router) { }
 
   ngOnInit(): void {
+    /*
     this.providerService.listProviders().subscribe(
       data=>{
         this.providers=data;
       }
-    )
-
+    )*/
+    this.refreshListProviders();
   }
   deleteProvider(myObj : any){
     this.providerService.deleteProvider(myObj).subscribe(
@@ -37,6 +38,7 @@ export class ListProviderComponent implements OnInit {
     updateProvider(myObj :any ) {
       // updateProvider est un component
       this.router.navigate(['updateProvider' + '/' + myObj['id']]);
+      this.refreshListProviders();
      }
 
 }

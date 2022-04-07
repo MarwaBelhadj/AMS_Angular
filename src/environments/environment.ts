@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  urlProviders: 'http://localhost:8080/provider'
+  urlProviders: 'http://localhost:8080/provider',
+  urlArticles: 'http://localhost:8080/articles'
 };
 
 /*

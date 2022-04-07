@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./add-provider.component.css']
 })
 export class AddProviderComponent implements OnInit {
-  provider : any;
+  //provider : any;
   //
   constructor(private service : ProviderService, private router : Router) { }
 
@@ -20,9 +20,10 @@ export class AddProviderComponent implements OnInit {
     this.service.createProvider(myform).subscribe(
       data=>{
         this.router.navigate(['listProvider']);
-        console.log(data);
+        //console.log(data);
       }
     );
+
 
   }
 

@@ -9,6 +9,8 @@ import { UpdateProviderComponent } from './update-provider/update-provider.compo
 import { HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AddArticleComponent } from './add-article/add-article.component';
+import { ListArticleComponent } from './list-article/list-article.component';
+import { UpdateArticleComponent } from './update-article/update-article.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { AddArticleComponent } from './add-article/add-article.component';
     AddProviderComponent,
     ListProviderComponent,
     UpdateProviderComponent,
-    AddArticleComponent
+    AddArticleComponent,
+    ListArticleComponent,
+    UpdateArticleComponent
   ],
   imports: [
     BrowserModule,

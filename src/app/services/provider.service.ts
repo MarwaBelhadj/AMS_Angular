@@ -19,9 +19,9 @@ export class ProviderService {
     this.provider = {
       'name' : myform.value.providerName,
       'email' : myform.value.providerEmail,
-      'address' : myform.value.providerAddress
+      'address' : myform.value.providerAdress
     }
-    return this.Http.post(this.urlProviders + '/add',this.provider);
+    return this.Http.post(this.urlProviders+'/add',this.provider);
   }
 
   updateProvider(myObj:any){
